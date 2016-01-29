@@ -16,7 +16,7 @@ timeframe:
 filter:
 - query:
     query_string:
-      query: "Happenings EmailBot error occurred"
+      query: "\"Happenings EmailBot error occurred\""
 
 alert:
 - "email"
