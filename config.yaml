@@ -7,6 +7,7 @@ buffer_time:
 es_host: notsplunk-internal.glgresearch.com
 es_port: 80
 es_url_prefix: elastic
+smtp_host: localship
 
 # The index on es_host which is used for metadata storage
 # This can be a unmapped index, but it is recommended that you run

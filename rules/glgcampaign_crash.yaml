@@ -3,6 +3,7 @@
 es_host: notsplunk-internal.glgresearch.com
 es_port: 80
 es_url_prefix: elastic
+smtp_host: localship
 
 name: GLGCampaign Crash
 type: frequency
