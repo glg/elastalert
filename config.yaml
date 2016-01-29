@@ -1,0 +1,19 @@
+rules_folder: rules
+run_every:
+  minutes: 1
+buffer_time:
+  minutes: 60
+
+es_host: notsplunk-internal.glgresearch.com
+es_port: 80
+es_url_prefix: elastic
+
+# The index on es_host which is used for metadata storage
+# This can be a unmapped index, but it is recommended that you run
+# elastalert-create-index to set a mapping
+writeback_index: elastalert_status
+
+# If an alert fails for some reason, ElastAlert will retry
+# sending the alert until this time period has elapsed
+alert_time_limit:
+  days: 2

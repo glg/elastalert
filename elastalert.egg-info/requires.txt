@@ -1,0 +1,12 @@
+argparse
+elasticsearch
+jira==0.32
+jsonschema
+mock
+python-dateutil
+PyStaticConfiguration
+pyyaml
+simplejson
+boto
+blist
+croniter
