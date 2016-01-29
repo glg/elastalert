@@ -4,6 +4,7 @@ install:
 	sudo apt-get -y install python-pip
 	sudo apt-get -y install uuid-dev
 	sudo pip install python-dateutil --upgrade
+	sudo pip install -U setuptools
 
 	sudo python setup.py install
 	sudo pip install -r requirements.txt
