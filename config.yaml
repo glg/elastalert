@@ -1,8 +1,8 @@
 rules_folder: rules
 run_every:
-  minutes: 1
+  minutes: 5
 buffer_time:
-  minutes: 60
+  hours: 4
 
 es_host: notsplunk-internal.glgresearch.com
 es_port: 80
