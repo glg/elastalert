@@ -5,7 +5,7 @@ install:
 	sudo apt-get -y install uuid-dev
 	sudo pip install python-dateutil --upgrade
 
-	python setup.py install
+	sudo python setup.py install
 	sudo pip install -r requirements.txt
 start:
 	echo 'whats the point. it calls web Procfile...'
