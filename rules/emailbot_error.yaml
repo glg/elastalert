@@ -5,7 +5,7 @@ es_port: 80
 es_url_prefix: elastic
 smtp_host: localship
 
-name: GLGCampaign Crash
+name: Emailbot Error
 type: frequency
 index: logstash-*
 
@@ -16,7 +16,7 @@ timeframe:
 filter:
 - query:
     query_string:
-      query: "glgcampaign: Unhandled"
+      query: "Happenings EmailBot error occurred"
 
 alert:
 - "email"
