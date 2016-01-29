@@ -1,24 +1,12 @@
-.PHONY: all production test docs clean
+install:
+	sudo apt-get update
+	sudo apt-get -y install python-dev
+	sudo apt-get -y install python-pip
+	sudo apt-get -y install uuid-dev
 
-all: production
+	sudo pip install python-dateutil --upgrade
 
-production:
-	@true
-
-docs:
-	tox -e docs
-
-dev: $(LOCAL_CONFIG_DIR) $(LOGS_DIR) install-hooks
-
-install-hooks:
-	pre-commit install -f --install-hooks
-
-test:
-	tox
-
-clean:
-	make -C docs clean
-	find . -name '*.pyc' -delete
-	find . -name '__pycache__' -delete
-	rm -rf virtualenv_run .tox .coverage *.egg-info build
-
+  python setup.py install
+  sudo pip install -r requirements.txt
+start:
+	echo 'whats the point. it calls web Procfile...'

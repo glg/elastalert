@@ -1,0 +1,24 @@
+# Alert when the rate of events exceeds a threshold
+
+es_host: notsplunk-internal.glgresearch.com
+es_port: 80
+es_url_prefix: elastic
+
+name: GLGCampaign Crash
+type: frequency
+index: logstash-*
+
+num_events: 1
+timeframe:
+  minutes: 1
+
+filter:
+- query:
+    query_string:
+      query: "ident:glgcampaign AND message:taco"
+
+alert:
+- "email"
+
+email:
+- "afriedrich@glgroup.com"
