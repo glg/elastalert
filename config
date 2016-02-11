@@ -2,8 +2,9 @@
 
 cat config_template.yaml | envsubst > config.yaml
 
+mkdir rules
 for file in rules_templates/*
 do
   echo "Processing $f file..."
-  cat $file | envsubst > ${file##*/}
+  cat $file | envsubst > rules/${file##*/}
 done
