@@ -18,3 +18,5 @@ writeback_index: elastalert_status
 # sending the alert until this time period has elapsed
 alert_time_limit:
   days: 2
+
+test: ${BUILDPACK_URL}

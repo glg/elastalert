@@ -8,5 +8,7 @@ install:
 
 	sudo python setup.py install
 	sudo pip install -r requirements.txt
+
+	cat config.yaml | envsubst > config_test2.yaml
 start:
 	echo 'whats the point. it calls web Procfile...'
