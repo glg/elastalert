@@ -12,7 +12,7 @@ install:
 
 	cat config.yaml | envsubst > config.yaml
 
-  RULES=rules
+	RULES=rules
 	for f in $RULES
 	do
 		echo "Processing $f file..."
