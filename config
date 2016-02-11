@@ -5,5 +5,5 @@ cat config.yaml | envsubst > config.yaml
 for f in rules_templates/*
 do
   echo "Processing $f file..."
-  cat $f | envsubst > $f
+  cat $f | envsubst > $f_out.txt
 done
