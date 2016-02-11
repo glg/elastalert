@@ -3,6 +3,7 @@ install:
 	sudo apt-get -y install python-dev
 	sudo apt-get -y install python-pip
 	sudo apt-get -y install uuid-dev
+	sudo apt-get -y install envsubst
 	sudo pip install python-dateutil --upgrade
 	sudo pip install -U setuptools
 
