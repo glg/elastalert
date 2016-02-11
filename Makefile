@@ -12,10 +12,11 @@ install:
 
 	cat config.yaml | envsubst > config.yaml
 
-	for f in rules
+  RULES=rules
+	for f in $RULES
 	do
 		echo "Processing $f file..."
-		cat $f | envsubst > $f
+		cat rules/$f | envsubst > rules/$f
 	done
 start:
 	echo 'whats the point. it calls web Procfile...'
