@@ -6,6 +6,6 @@ for f in rules/*
 do
   echo "Processing $f file..."
   cat $f
-  cat $f | envsubst > $f
-  cat $f
+  cat $f | envsubst > out.yaml
+  cat out.yaml
 done
