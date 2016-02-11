@@ -2,8 +2,8 @@
 
 cat config_template.yaml | envsubst > config.yaml
 
-for f in rules_templates/*
+for file in rules_templates/*
 do
   echo "Processing $f file..."
-  cat $f | envsubst > ../$f
+  cat $file | envsubst > ${file##*/}
 done
