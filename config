@@ -1,8 +1,9 @@
 #!/bin/bash
 
-cat /home/ubuntu/app/config.yaml | envsubst > /home/ubuntu/app/config.yaml
+cat config.yaml | envsubst > config.yaml
+cat config.yaml
 
-for f in /home/ubuntu/app/rules/*
+for f in rules/*
 do
   echo "Processing $f file..."
   cat $f | envsubst > $f
