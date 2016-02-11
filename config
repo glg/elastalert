@@ -7,5 +7,5 @@ do
   echo "Processing $f file..."
   cat $f
   cat $f | envsubst > out.yaml
-  cat out.yaml
+  mv out.yaml $f
 done
