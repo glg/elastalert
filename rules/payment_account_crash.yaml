@@ -1,8 +1,8 @@
 # Alert when the rate of events exceeds a threshold
 
-es_host: notsplunk-internal.glgresearch.com
-es_port: 80
-es_url_prefix: elastic
+es_host: ${ES_HOST}
+es_port: ${ES_POST}
+es_url_prefix: ${ES_URL_PREFIX}
 smtp_host: localship
 
 name: Payment Account Crash
