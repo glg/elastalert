@@ -4,9 +4,9 @@ run_every:
 buffer_time:
   hours: 4
 
-es_host: notsplunk-internal.glgresearch.com
-es_port: 80
-es_url_prefix: elastic
+es_host: ${ES_HOST}
+es_port: ${ES_POST}
+es_url_prefix: ${ES_URL_PREFIX}
 smtp_host: localship
 
 # The index on es_host which is used for metadata storage
@@ -18,5 +18,3 @@ writeback_index: elastalert_status
 # sending the alert until this time period has elapsed
 alert_time_limit:
   days: 2
-
-test: ${BUILDPACK_URL}
