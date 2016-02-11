@@ -9,8 +9,5 @@ install:
 
 	sudo python setup.py install
 	sudo pip install -r requirements.txt
-
-
-	./config
 start:
 	echo 'whats the point. it calls web Procfile...'
