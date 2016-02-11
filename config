@@ -1,10 +1,11 @@
 #!/bin/bash
 
 cat config.yaml | envsubst > config.yaml
-cat config.yaml
 
 for f in rules/*
 do
   echo "Processing $f file..."
+  cat $f
   cat $f | envsubst > $f
+  cat $f
 done
