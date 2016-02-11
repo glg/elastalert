@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cat config.yaml | envsubst > config.yaml
+cat config.yaml | envsubst > out.yaml
+mv out.yaml config.yaml
 
 for f in rules/*
 do
