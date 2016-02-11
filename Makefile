@@ -10,12 +10,7 @@ install:
 	sudo python setup.py install
 	sudo pip install -r requirements.txt
 
-	cat config.yaml | envsubst > config.yaml
 
-	for f in rules/*
-	do
-		echo "Processing $f file..."
-		cat rules/$f | envsubst > rules/$f
-	done
+	./config
 start:
 	echo 'whats the point. it calls web Procfile...'
