@@ -10,5 +10,4 @@ install:
 	sudo python setup.py install
 	sudo pip install -r requirements.txt
 start:
-	echo 'whats the point. it calls web Procfile...'
 	./config && exec python -m elastalert.elastalert --verbose

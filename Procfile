@@ -1,1 +1,1 @@
-web: echo 'test' && ./config && exec python -m elastalert.elastalert --verbose
+web: ./config && exec python -m elastalert.elastalert --verbose
