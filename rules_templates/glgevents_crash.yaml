@@ -16,7 +16,7 @@ timeframe:
 filter:
 - query:
     query_string:
-      query: "\"glgevents: npm ERR\""
+      query: "\"glgevents: get_transcripts error\""
 
 alert:
 - "email"
