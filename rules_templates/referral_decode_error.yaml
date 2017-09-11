@@ -1,0 +1,25 @@
+# Alert when the rate of events exceeds a threshold
+
+es_host: ${ES_HOST}
+es_port: ${ES_POST}
+es_url_prefix: ${ES_URL_PREFIX}
+smtp_host: localship
+
+name: Referral Token Decode Error
+type: frequency
+index: logstash-*
+
+num_events: 1
+timeframe:
+  minutes: 1
+
+filter:
+- query:
+    query_string:
+      query: "\"error decoding\""
+
+alert:
+- "email"
+
+email:
+- "igroff@glgroup.com"
